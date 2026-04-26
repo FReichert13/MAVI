@@ -1,0 +1,14 @@
+﻿MAVI II - Unidad 1 - Franco Reichert
+
+
+Escena interactiva en la que el usuario puede crear nuevas cajas físicas durante la ejecución y definir su rotación inicial antes de generarlas, integrando Box2D (simulación física) con Raylib (renderizado).
+Se necesita:
+-Raylib (incluida en el proyecto / configurada en Visual Studio)
+-Box2D (código fuente incluido en lib/box2d/, pero las librerías compiladas no se versionan en el repo)
+Cómo compilar las librerías de Box2D
+Las carpetas lib/box2d/Debug/ y lib/box2d/Release/ con los archivos .lib no están incluidas en el repositorio (siguen el .gitignore estándar de Visual Studio). Hay que generarlas localmente antes de compilar el proyecto principal.
+Pasos
+1-Abrir la solución de Box2D en Visual Studio (debería estar dentro de lib/box2d/, archivo .sln).
+2-Compilar la configuración Debug (Build → Build Solution con Debug seleccionado en la barra superior). Eso genera lib/box2d/Debug/box2d.lib.
+3-Cambiar la configuración a Release y compilar de nuevo. Eso genera lib/box2d/Release/box2d.lib.
+4-Volver al proyecto principal Unidad1_Franco_Reichert y compilarlo normalmente. Las rutas a los .lib ya están configuradas en las propiedades del proyecto.
